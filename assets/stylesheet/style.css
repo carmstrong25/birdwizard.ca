@@ -1,0 +1,161 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:  Bell
+Version:  1.1
+Last change:  10/16/14
+Assigned to:  ThemeWizz
+-------------------------------------------------------------------*/
+
+/**
+ * Colors
+ */
+@import "colors/blue.css";
+@import "colors/green.css";
+@import "colors/orange.css";
+@import "colors/yellow.css";
+
+/**
+ * Themes
+ */
+@import "themes/dark.css";
+@import "themes/blue.css";
+
+/**
+ * Partials
+ */
+@import "partials/header.css";
+@import "partials/countdown.css";
+@import "partials/subscribe.css";
+@import "partials/sections.css";
+@import "partials/twitter.css";
+@import "partials/footer.css";
+
+/**
+ * Main Stylesheet
+ */
+body,
+html {
+  height: 90%;
+  background-color: #000;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+}
+
+/**
+ * Basics
+ */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  opacity: 0.7;
+  text-decoration: none;
+
+  -webkit-transition: color 350ms ease;
+  -moz-transition: color 350ms ease;
+  transition: color 350ms ease;
+}
+
+section {
+  color: #606060;
+  padding: 80px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+section.short {
+  padding: 40px 0;
+}
+
+section.bg {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+section.gray {
+  color: #656565;
+  background: #f6f6f6;
+}
+/* Section titles */
+section h2,
+section h3 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 1.3em 0;
+  font-weight: 600;
+  line-height: 1.6em;
+}
+section h2 {
+  font-size: 2.5em;
+}
+section p {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+form {
+  text-align: left;
+}
+
+.btn {
+  border-radius: 3px;
+}
+
+.form-control {
+  border: 2px solid #eee;
+  box-shadow: none;
+  border-radius: 3px;
+}
+
+/**
+ * Animations
+ */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

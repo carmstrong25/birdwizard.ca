@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Birdwizard_</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css" />
+  </head>
+  <body class="green-color">
+    <!-- Header -->
+    <header id="header">
+      <div class="background">
+        <div id="twitch-embed"></div>
+      </div>
+    </header>
+    <!-- Header -->
+
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: "850",
+        channel: "huskerrs",
+        theme: "dark",
+      });
+    </script>
+  </body>
+</html>

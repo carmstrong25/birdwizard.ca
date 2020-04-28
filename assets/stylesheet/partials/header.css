@@ -1,0 +1,109 @@
+/*------------------------------------------------------------------
+HEADER
+
+* body
+  + Header / header
+    - Background / .background
+    - Background Overlay / .overlay
+    - Header Content / .content
+      - Logo / .logo
+      - Social Icons / .social
+      - Headline / h2
+      - Countdown / .countdown [see countdown.css]
+      - Subscription / .subscribe [see subscribe.css]
+      - Learn More / .learn-more
+  + Features Section / section
+  + Team Section / section
+  + Quote Background Section / section.bg-team
+  + Twitter Section / section [see twitter.css]
+  + Footer / footer [see footer.css]
+-------------------------------------------------------------------*/
+header {
+  color: #000;
+  padding: 5px 0;
+  position: relative;
+  overflow: hidden;
+  height: 850px;
+}
+/* Background */
+header .background {
+  width: 100%;
+  height: 100%;
+}
+header .background img,
+header .background video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* Background Overlay */
+header .overlay {
+  background: #3d4860 url("../../image/header-overlay.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0.8;
+}
+
+/* Logo */
+header h1.logo {
+  background: url("../../demo/logo.png") no-repeat center left;
+  height: 60px;
+  margin: 0;
+  overflow: hidden;
+  text-indent: -9999999px;
+}
+
+/* Social Icons */
+header .social {
+  text-align: right;
+}
+header .social a {
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 40px;
+  margin: 10px 15px 10px 0;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
+header .push-down {
+  margin-top: 15%;
+}
+
+/* Headline */
+header h2 {
+  font-size: 2.1em;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #a3a7b2;
+}
+
+/* Learn More */
+header .learn-more {
+  text-align: center;
+}
+header .learn-more a {
+  margin: 50px 0;
+  padding: 20px 30px;
+  border: 2px solid white;
+  font-size: 1.2em;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+}
+header .learn-more a:hover {
+  opacity: 1;
+}
